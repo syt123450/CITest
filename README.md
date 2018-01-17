@@ -2,4 +2,4 @@
 
 [![Build](https://travis-ci.org/syt123450/CITest.svg?branch=master)](https://travis-ci.org/syt123450/CITest)
 
-[![Coverage](https://coveralls.io/repos/github/geekplux/markvis/badge.svg?style=flat-square)](https://coveralls.io/github/geekplux/markvis)
+[![Coverage Status](https://coveralls.io/repos/github/syt123450/CITest/badge.svg?branch=master)](https://coveralls.io/github/syt123450/CITest?branch=master)
