@@ -7,13 +7,15 @@
     "example": "examples",
     "test": "tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^4.1.0"
+  },
   "devDependencies": {
     "rollup": "^0.53.4",
     "uglify-js": "^2.4.11"
   },
   "scripts": {
-    "test": "echo \"111 \""
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
