@@ -20,8 +20,8 @@
   "scripts": {
     "test": "rollup -c && mocha",
     "build-beautify": "rollup -c",
-    "test:cover": "jest --coverage",
-    "test:cover:travis": "npm run test:cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
