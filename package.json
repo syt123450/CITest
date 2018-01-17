@@ -13,14 +13,16 @@
   "devDependencies": {
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.5",
+    "jest": "^20.0.4",
     "mocha-lcov-reporter": "^1.3.0",
     "rollup": "^0.53.4",
     "uglify-js": "^2.4.11"
   },
   "scripts": {
     "test": "mocha",
-    "cover": "istanbul cover _mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "test:cover": "jest --coverage",
+    "test:cover:travis": "npm run test:cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+
   },
   "repository": {
     "type": "git",
