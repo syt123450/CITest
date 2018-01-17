@@ -6,8 +6,10 @@ describe('Test add() function', function() {
 	it('Equals to 3', function() {
 		assert.equal(3, add(1, 2))
 	});
+});
 
-    it('Equals to 0', function() {
-        assert.equal(0, add(1, -1))
+describe('Test add() function', function() {
+    it('Equals to 3', function() {
+        assert.notEqual(4, add(1, 2))
     });
 });
