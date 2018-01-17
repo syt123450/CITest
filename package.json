@@ -18,7 +18,7 @@
     "uglify-js": "^2.4.11"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "rollup -c && mocha",
     "build-beautify": "rollup -c",
     "test:cover": "jest --coverage",
     "test:cover:travis": "npm run test:cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
