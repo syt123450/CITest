@@ -22,7 +22,6 @@
     "test": "mocha",
     "test:cover": "jest --coverage",
     "test:cover:travis": "npm run test:cover && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
-
   },
   "repository": {
     "type": "git",
