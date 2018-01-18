@@ -1,5 +1,5 @@
-// var add = require('../src/toBeTested').add;
-var add = require('../build/toBeTested.module').add;
+var add = require('../src/toBeTested.js').add;
+// var add = require('../build/toBeTested.module').add;
 var assert = require('assert');
 
 describe('Test add() function', function() {
