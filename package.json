@@ -9,12 +9,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^4.1.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "coveralls": "^3.0.0",
-    "istanbul": "^0.4.5",
+    "isparta": "^4.0.0",
     "jest": "^20.0.4",
+    "mocha": "^4.1.0",
     "mocha-lcov-reporter": "^1.3.0",
     "rollup": "^0.53.4",
     "uglify-js": "^2.4.11"
@@ -22,7 +23,7 @@
   "scripts": {
     "test": "rollup -c && mocha",
     "build-beautify": "rollup -c",
-    "cover": "istanbul cover _mocha",
+    "cover": "babel-node ./node_modules/.bin/isparta cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
